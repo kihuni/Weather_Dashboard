@@ -39,4 +39,5 @@ Visit localhost:8000 to see the dashboard in action!
 Blog Post 📖
 
 For a detailed step-by-step guide on how this project was built, check out the full blog post:
+
 👉 [Building a Real-Time Weather Dashboard with Django and OpenWeather API ](https://dev.to/kihuni/building-a-real-time-weather-dashboard-with-openweather-api-and-django-35c5)
