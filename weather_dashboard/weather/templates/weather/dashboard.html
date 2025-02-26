@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="refresh" content="300"> <!-- Refresh every 5 minutes -->
+    <title>Weather Dashboard</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        .weather-box { border: 1px solid #ccc; padding: 20px; max-width: 300px; margin: 0 auto; }
+        h1 { color: #333; }
+        input, button { padding: 10px; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Weather Dashboard</h1>
+    <form method="GET" action="">
+        <input type="text" name="city" placeholder="Enter city name">
+        <button type="submit">Search</button>
+    </form>
+    
+    {% if error %}
+    <p>{{ error }}</p>
+    {% else %}
+    <div class="weather-box">
+        <h2>{{ city }} Weather</h2>
+        <p>Temperature: {{ temp }}°C</p>
+        <p>Humidity: {{ humidity }}%</p>
+        <p>Condition: {{ description }}</p>
+    </div>
+    {% endif %}
+</body>
+</html>
